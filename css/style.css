@@ -1,0 +1,91 @@
+:root{
+    --bg-color: #ECF2F8;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: white;
+    background-color: var(--bg-color) ;
+    margin: 2em auto;
+}
+.container{
+    display: grid;
+    grid-template-areas: 'daniel   daniel  jonathan kira'
+                         'jeanette patrick patrick  kira';
+    
+}
+img{
+    border-radius: 100%;
+    float: left;
+    margin-right: 1.5em;
+}
+.head{
+    color: black;
+}
+.grad-title{
+    opacity: 50%;
+    color: white;
+}
+.title{
+     color: hsl(217, 19%, 35%);
+     opacity: 50%;
+}
+
+.card{
+    margin: 1em;
+    padding:1.5em 3em;
+    border-radius: 10px;
+
+}
+.main-quote{
+    margin:2em 0;
+    font-weight: 600;
+    font-size: 1.43em;   
+}
+.card1{
+    background-color: hsl(263, 55%, 52%);
+    grid-area: daniel;
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 85% 0 ;
+}
+.card2{
+    grid-area: jonathan;
+    background-color: hsl(217, 19%, 35%);
+}
+.card3{
+    grid-area: jeanette;
+    background-color: white;
+}
+.card4{
+    grid-area: patrick;
+    background-color: hsl(219, 29%, 14%);
+}
+.card5{
+    grid-area: kira;
+    background-color: white;
+
+}
+.p-test{
+    color: hsl(217, 19%, 35%);
+}
+.testimonial{
+    opacity: 70%;
+    font-size: 1.25em;
+}
+ .quote{
+    color: black;
+}
+
+@media  (max-width:767px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
